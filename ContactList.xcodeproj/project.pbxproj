@@ -67,10 +67,10 @@
 			isa = PBXGroup;
 			children = (
 				5DDDD0D21E4AB5C60039D087 /* main.m */,
-				5DDDD0DC1E4AC1D10039D087 /* Contact.h */,
-				5DDDD0DD1E4AC1D10039D087 /* Contact.m */,
 				5DDDD0DF1E4AC1F50039D087 /* ContactList.h */,
 				5DDDD0E01E4AC1F50039D087 /* ContactList.m */,
+				5DDDD0DD1E4AC1D10039D087 /* Contact.m */,
+				5DDDD0DC1E4AC1D10039D087 /* Contact.h */,
 				5DDDD0D91E4AB6040039D087 /* InputCollector.h */,
 				5DDDD0DA1E4AB6040039D087 /* InputCollector.m */,
 			);
@@ -264,6 +264,7 @@
 				5DDDD0D81E4AB5C60039D087 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

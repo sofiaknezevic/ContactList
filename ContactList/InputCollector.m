@@ -12,18 +12,18 @@
 
 - (NSString *)inputForPrompt:(NSString *)promptString
 {
-    NSString *usernameInput = promptString;
     
-    //NSLog(@"Your username is: %@", usernameInput);
-   
-    NSString *menu = [NSString stringWithFormat:
-                      (@"What would you like to do next?\nNew - Create a new contact list\nList - List all contacts\nQuit - Exit application")];
+    NSLog(@"%@", promptString);
     
-    NSLog(@"%@", menu);
+    char input[255];
+    fgets(input, 255, stdin);
+    
+    NSString *userInput = [[NSString stringWithCString:input encoding:NSUTF8StringEncoding]stringByTrimmingCharactersInSet:
+                           [NSCharacterSet whitespaceAndNewlineCharacterSet]];
     
     
-    
-    return usernameInput;
+    return userInput;
 }
+
 
 @end

@@ -7,7 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "InputCollector.h"
 
 @interface Contact : NSObject
+
+@property NSString *name;
+@property NSString *email;
+
 
 @end
