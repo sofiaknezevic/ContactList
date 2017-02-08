@@ -10,4 +10,22 @@
 
 @implementation ContactList
 
+- (instancetype)initArray
+{
+    self = [super init];
+    if (self) {
+        _contactArray = [[NSMutableArray alloc]init];
+    }
+    return self;
+}
+
+- (void) addContact:(Contact *)newContact
+{
+
+    [self.contactArray addObject:newContact];
+    
+    //testing if getting stored in array (YAAASSSSS!!!)
+    //NSLog(@"This contact: %@ with the e-mail: %@ was stored in your contact list.", newContact.name, newContact.email);
+}
+
 @end

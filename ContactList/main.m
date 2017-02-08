@@ -15,7 +15,7 @@ int main(int argc, const char * argv[]) {
     @autoreleasepool {
         
         
-        //NSLog(@"%@", [testInput inputForPrompt:@"Enter Your Username"]);
+        ContactList *listContact = [[ContactList alloc] init];
         
         while(true){
             
@@ -33,6 +33,12 @@ int main(int argc, const char * argv[]) {
                 Contact *testContact = [[Contact alloc] init];
                 testContact.name = [testInput inputForPrompt:@"What is the contact name?\n"];
                 testContact.email = [testInput inputForPrompt:@"What is the contact e-mail?\n"];
+                
+                [listContact addContact:testContact];
+                
+            }else if([menu isEqualToString:@"list"]){
+                
+                
             }
             
         }
