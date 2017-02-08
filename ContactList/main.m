@@ -25,7 +25,7 @@ int main(int argc, const char * argv[]) {
             
             if([menu isEqualToString:@"quit"]){
                 
-                NSLog(@"Thanks for using your neighborhood friendly ContactList, see you NT! [next.time]");
+                NSLog(@"Thanks for using your neighborhood friendly ContactList, see you NT! [next time]");
                 break;
                 
             }else if([menu isEqualToString:@"new"]){
@@ -38,7 +38,7 @@ int main(int argc, const char * argv[]) {
                 
             }else if([menu isEqualToString:@"list"]){
                 
-                
+                [listContact print];
             }
             
         }
