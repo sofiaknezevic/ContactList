@@ -14,8 +14,24 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         
-        
         ContactList *listContact = [[ContactList alloc] init];
+        
+        Contact *sample = [[Contact alloc] init];
+        sample.name = @"Sofia Knezevic";
+        sample.email = @"sofia.knezevic@gmail.com";
+        [listContact addContact:sample];
+        
+        Contact *sample2 = [[Contact alloc] init];
+        sample2.name = @"Earl Grey";
+        sample2.email = @"londonfogssuck@gmail.com";
+        [listContact addContact:sample2];
+        
+        Contact *sample3 = [[Contact alloc] init];
+        sample3.name = @"YouAreFunnyLooking";
+        sample3.email = @"lookfunny@gmail.com";
+        [listContact addContact:sample3];
+        
+        
         
         while(true){
             
@@ -37,6 +53,8 @@ int main(int argc, const char * argv[]) {
                 [listContact addContact:testContact];
                 
             }else if([menu isEqualToString:@"list"]){
+                
+                NSLog(@"you've hit list");
                 
                 [listContact print];
             }
