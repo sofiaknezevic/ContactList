@@ -14,5 +14,7 @@
 @property NSString *name;
 @property NSString *email;
 
+- (instancetype)initWithName:(NSString *)name andWithEmail:(NSString *)email;
+
 
 @end

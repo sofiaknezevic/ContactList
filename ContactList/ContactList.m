@@ -25,7 +25,7 @@
     [self.contactArray addObject:newContact];
     
     //testing if getting stored in array (YAAASSSSS!!!)
-    NSLog(@"This contact: %@ with the e-mail: %@ was stored in your contact list.", newContact.name, newContact.email);
+    //NSLog(@"This contact: %@ with the e-mail: %@ was stored in your contact list.", newContact.name, newContact.email);
     
 }
 
